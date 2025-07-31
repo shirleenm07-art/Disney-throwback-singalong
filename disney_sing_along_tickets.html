@@ -1,0 +1,165 @@
+
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Disney Sing Along Tickets</title>
+         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+         <style>
+             body {
+                 font-family: 'Roboto', sans-serif;
+                 max-width: 900px;
+                 margin: 0 auto;
+                 padding: 20px;
+                 text-align: center;
+                 background: #ffffff;
+             }
+             .hero {
+                 margin-bottom: 20px;
+             }
+             h1 {
+                 font-family: 'Lobster', cursive;
+                 color: #000000;
+                 font-size: 2.5em;
+                 margin: 0.5em 0;
+             }
+             .tagline {
+                 color: #000000;
+                 font-size: 1.2em;
+                 margin-bottom: 1em;
+             }
+             .ticket {
+                 position: relative;
+                 padding: 20px;
+                 margin: 15px 0;
+                 border-radius: 15px;
+                 background-size: cover;
+                 background-position: center;
+                 color: #fff;
+                 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                 transition: transform 0.3s, box-shadow 0.3s;
+             }
+             .ticket::before {
+                 content: '';
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 right: 0;
+                 bottom: 0;
+                 background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+                 border-radius: 15px;
+                 z-index: 1;
+             }
+             .ticket > * {
+                 position: relative;
+                 z-index: 2; /* Ensure content is above overlay */
+             }
+             .ticket:hover {
+                 transform: scale(1.03);
+                 box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+             }
+             .ticket.single {
+                 background-image: url('https://i.imgur.com/6wVcB5p.jpg');
+             }
+             .ticket.couple {
+                 background-image: url('https://i.imgur.com/zUIr87C.jpg');
+             }
+             .ticket.trio {
+                 background-image: url('https://i.imgur.com/vP36jCP.jpg');
+             }
+             .ticket h3 {
+                 font-family: 'Lobster', cursive;
+                 margin: 0;
+                 color: #fff;
+                 font-size: 1.8em;
+             }
+             .ticket p {
+                 margin: 8px 0;
+                 font-size: 1em;
+             }
+             .perks {
+                 text-align: left;
+                 margin: 10px auto;
+                 max-width: 300px;
+             }
+             .perks li {
+                 margin: 5px 0;
+             }
+             .btn {
+                 display: inline-block;
+                 padding: 12px 25px;
+                 background-color: #d81b60;
+                 color: white;
+                 text-decoration: none;
+                 border-radius: 25px;
+                 margin-top: 15pm;
+                 font-weight: bold;
+                 transition: background-color 0.3s;
+             }
+             .btn:hover {
+                 background-color: #ad1457;
+             }
+             @media (max-width: 600px) {
+                 h1 {
+                     font-size: 2em;
+                 }
+                 .ticket {
+                     padding: 15px;
+                 }
+                 .ticket h3 {
+                     font-size: 1.5em;
+                 }
+                 .btn {
+                     padding: 10px 20px;
+                 }
+             }
+         </style>
+     </head>
+     <body>
+         <div class="hero">
+             <h1>Disney Sing Along</h1>
+             <p class="tagline">Sing, Sip, and Shine on August 28, 2025, from 7 PM to 10 PM at Silver Luna Lounge, Juja!</p>
+         </div>
+         
+         <div class="ticket single">
+             <h3>Single Ticket</h3>
+             <p>Price: KSH 1500 (5 available)</p>
+             <ul class="perks">
+                 <li>🍹 One free cocktail</li>
+                 <li>🎤 Group R&B karaoke</li>
+                 <li>🎶 Disney Sing Along event</li>
+             </ul>
+             <a href="https://buytickets.at/truckernights/1802699" class="btn">Request Single Ticket</a>
+             <p style="font-size: 0.9em;">Pay via M-Pesa to 0791736514 and send proof to <a href="/cdn-cgi/l/email-protection#5633203338222516323f2538332f253f3831373a3938317835393b"><span class="__cf_email__" data-cfemail="9efbe8fbf0eaeddefaf7edf0fbe7edf7f0f9fff2f1f0f9b0fdf1f3">[email&#160;protected]</span></a>.</p>
+         </div>
+         
+         <div class="ticket couple">
+             <h3>Couple Ticket</h3>
+             <p>Price: KSH 2500 (5 available)</p>
+             <ul class="perks">
+                 <li>🍹 One free cocktail per person</li>
+                 <li>🎤 Group R&B karaoke</li>
+                 <li>🎶 Disney Sing Along event</li>
+             </ul>
+             <a href="https://buytickets.at/truckernights/1802699" class="btn">Request Couple Ticket</a>
+             <p style="font-size: 0.9em;">Pay via M-Pesa to 0791736514 and send proof to <a href="/cdn-cgi/l/email-protection#98fdeefdf6ecebd8fcf1ebf6fde1ebf1f6fff9f4f7f6ffb6fbf7f5"><span class="__cf_email__" data-cfemail="d4b1a2b1baa0a794b0bda7bab1ada7bdbab3b5b8bbbab3fab7bbb9">[email&#160;protected]</span></a>.</p>
+         </div>
+         
+         <div class="ticket trio">
+             <h3>Trio Ticket</h3>
+             <p>Price: KSH 3600 (5 available)</p>
+             <ul class="perks">
+                 <li>🍹 One free cocktail per person</li>
+                 <li>🎤 Group R&B karaoke</li>
+                 <li>🎶 Disney Sing Along event</li>
+             </ul>
+             <a href="https://buytickets.at/truckernights/1802699" class="btn">Request Trio Ticket</a>
+             <p style="font-size: 0.9em;">Pay via M-Pesa to 0791736514 and send proof to <a href="/cdn-cgi/l/email-protection#b6d3c0d3d8c2c5f6d2dfc5d8d3cfc5dfd8d1d7dad9d8d198d5d9db"><span class="__cf_email__" data-cfemail="325744575c464172565b415c574b415b5c55535e5d5c551c515d5f">[email&#160;protected]</span></a>.</p>
+         </div>
+
+         <p>For more information, contact us at <a href="/cdn-cgi/l/email-protection#c9acbfaca7bdba89ada0baa7acb0baa0a7aea8a5a6a7aee7aaa6a4"><span class="__cf_email__" data-cfemail="086d7e6d667c7b486c617b666d717b61666f696467666f266b6765">[email&#160;protected]</span></a> or follow us with #DisneySingAlongJuja!</p>
+     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+     </html>
+     
