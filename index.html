@@ -29,17 +29,44 @@
             margin-bottom: 1em;
         }
         .ticket {
+            position: relative;
             padding: 20px;
             margin: 15px 0;
             border-radius: 15px;
+            background-size: cover;
+            background-position: center;
             color: #fff;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s, box-shadow 0.3s;
         }
+        .ticket::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
+            border-radius: 15px;
+            z-index: 1;
+        }
+        .ticket > * {
+            position: relative;
+            z-index: 2; /* Ensure content is above overlay */
+        }
         .ticket:hover {
             transform: scale(1.03);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .ticket.single {
+            background-image: url('https://i.imgur.com/6wVcB5p.jpg');
+        }
+        .ticket.couple {
+            background-image: url('https://i.imgur.com/zUIr87C.jpg');
+        }
+        .ticket.trio {
+            background-image: url('https://i.imgur.com/vP36jCP.jpg');
         }
         .ticket h3 {
             font-family: 'Lobster', cursive;
@@ -95,42 +122,41 @@
         <p class="tagline">Sing, Sip, and Shine on August 28, 2025, from 7 PM to 10 PM at Silver Luna Lounge, Juja!</p>
     </div>
     
-    <div class="ticket">
+    <div class="ticket single">
         <h3>Single Ticket</h3>
         <p>Price: KSH 1500 </p>
         <ul class="perks">
-            <li> 2 free cocktail</li>
+            <li>   2 shots of liquor </li>
             <li>🎤 Group R&B karaoke</li>
             <li>🎶 Disney Sing Along event</li>
         </ul>
         <a href="https://buytickets.at/truckernights/1802699" class="btn">Request Single Ticket</a>
-        <p style="font-size: 0.9em;">Pay via M-Pesa to 0791736514 and send proof to <a href="mailto:events@disneysingalong.com">events@disneysingalong.com</a>.</p>
+        <p style="font-size: 0.9em;">Pay via M-Pesa ;Pochi la biashara to 0791736514 </p>
     </div>
     
-    <div class="ticket">
+    <div class="ticket couple">
         <h3>Couple Ticket</h3>
         <p>Price: KSH 2500 </p>
         <ul class="perks">
-            <li>   2 free shots per person</li>
+            <li> 2 shots of liquor per person</li>
             <li>🎤 Group R&B karaoke</li>
             <li>🎶 Disney Sing Along event</li>
         </ul>
         <a href="https://buytickets.at/truckernights/1802699" class="btn">Request Couple Ticket</a>
-        <p style="font-size: 0.9em;">Pay via M-Pesa to 0791736514 and send proof to <a href="mailto:events@disneysingalong.com">events@disneysingalong.com</a>.</p>
+        <p style="font-size: 0.9em;">Pay via M-Pesa;Pochi la biashara to 0791736514 </p>
     </div>
     
-    <div class="ticket">
+    <div class="ticket trio">
         <h3>Trio Ticket</h3>
         <p>Price: KSH 3600 </p>
         <ul class="perks">
-            <li>  2 free shots per person</li>
+            <li> 2 shots of liquor per person </li>
             <li>🎤 Group R&B karaoke</li>
             <li>🎶 Disney Sing Along event</li>
         </ul>
         <a href="https://buytickets.at/truckernights/1802699" class="btn">Request Trio Ticket</a>
-        <p style="font-size: 0.9em;">Pay via M-Pesa to 0791736514 and send proof to <a href="mailto:events@disneysingalong.com">events@disneysingalong.com</a>.</p>
+        <p style="font-size: 0.9em;">Pay via M-Pesa ;Pochi la biashara to 0791736514 </p>
     </div>
 
-    <p>For more information, contact us at <a href="mailto:events@disneysingalong.com">events@disneysingalong.com</a> or follow us with #DisneySingAlongJuja!</p>
 </body>
 </html>
